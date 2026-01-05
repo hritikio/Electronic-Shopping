@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" >
+
+
+  </head>
+  <body>
+    <!--Navbar section -->
+    <header class="section-navbar">
+      <section class="top-txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free Shiping,30-day return or refund guarantee</p>
+          </div>
+          <div class="sign_in_up">
+            <a href="#">SIGN IN </a>
+            <a href="#">SIGN UP </a>
+          </div>
+        </div>
+      </section>
+
+
+
+    <div class="nav-container">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img
+          src="/hritikstore.png"
+          alt="Hritik Store"
+          class="logo"
+         
+          >
+        </a>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>  <!-- / means home page  -->
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link">Products</a>  
+        </li>
+        <li class="nav-item">
+          <a href="contact.html"  class="nav-link">Contact</a>  
+        </li>
+        <li class="nav-item">
+          <a href="addtocart.html" id="cart-value" class="nav-link add-to-cart-btn"><i class="fa-solid fa-cart-shopping">0 </i> </a> 
+        </li>
+
+        
+      </ul>
+
+    </nav>
+    </div> 
+        <script type="module" src="cart-value.js"></script>
+
+     <!--End Navbar section -->
+
+
+     <section class="addtocart"> 
+         <div class="container">
+            <section>
+                <div id="productcartcontainer"></div>
+            </section>
+             
+
+          <section class="productCartTotalElem">
+            <div class="productCartTotalElement">
+                <p>Selected Offer Summary</p>
+                <div class="productOrderTotal">
+                    <div>
+                        <p>Sub Total:</p>
+                        <p class="productsSubTotal">₹0</p>
+                    </div>
+
+                    <div>
+                        <p >Tax:</p>
+                        <p class="tax">₹50</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Final Total:</p>
+                        <p class="totalPrice">₹0</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+        </div>
+    </section>
+
+
+
+
+     <!--Template for Products -->
+     <template id="productCarttemplate">
+      <div class="product-card" id="cardId">
+         <div><span class="category"></span></div>
+        <img class="product-image" src="" alt="">
+        <h1 class="product-name"></h1>
+
+        
+
+
+      
+
+        
+            <p class="productPrice"></p>
+       
+
+        
+           
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">11</p>
+              <button class="cartDecrement">-</button>
+            </div>
+       
+
+        <button class="add-to-cart-button  remove-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i> Remove
+        </button>
+
+
+      </div>
+     </template>
+
+     <!--End of Template for Products -->
+
+
+
+</body>
